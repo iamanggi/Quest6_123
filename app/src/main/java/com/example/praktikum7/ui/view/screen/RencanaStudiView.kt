@@ -37,6 +37,7 @@ import com.example.praktikum7.R
 import com.example.praktikum7.data.MataKuliah
 import com.example.praktikum7.data.RuangKelas
 import com.example.praktikum7.model.Mahasiswa
+import com.example.praktikum7.ui.view.widget.DynamicSelectedTextField
 
 @Composable
 fun RencanaStudyView(
