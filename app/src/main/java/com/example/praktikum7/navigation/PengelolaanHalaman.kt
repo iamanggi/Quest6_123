@@ -14,6 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.praktikum7.ui.view.screen.MahasiswaFormView
 import com.example.praktikum7.ui.view.screen.RencanaStudyView
 import com.example.praktikum7.ui.view.screen.SplashView
+import com.example.praktikum7.ui.view.screen.TampilDataView
 import com.example.praktikum7.ui.view.viewmodel.RencanaStudyViewModel
 
 
@@ -71,7 +72,15 @@ fun PengelolaanHalaman(
             )
 
         }
-
-
+        composable(route = Halaman.Tampil.name)
+        {
+            TampilDataView(
+                uiState = uiState,
+                krsStateUi = krsState,
+                onBackButtonClicked = {navController.popBackStack()},
+                onResetButtonClicked = {navController.navigate(Halaman.Splash.name)}
+            )
+        }
     }
 }
+
