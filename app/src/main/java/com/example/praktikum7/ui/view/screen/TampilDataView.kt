@@ -87,9 +87,37 @@ fun TampilDataView(
                             )
                         }
                     }
+                    Spacer(modifier = Modifier.padding(12.dp))
+                    Column(
+                        modifier = Modifier.fillMaxWidth()
+                    ) {
+                        Text(
+                            text = "Matakuliah yang diambil:",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 18.sp
+                        )
+                        Text(
+                            text = krsStateUi.namaMk,
+                            fontSize = 16.sp
+                        )
+
+                        Spacer(modifier = Modifier.padding(top = 8.dp))
+
+                        Text(
+                            text = "Kelas: ",
+                            fontWeight = FontWeight.Bold,
+                            fontSize = 18.sp
+                        )
+                        Text(
+                            text = krsStateUi.kelas,
+                            fontSize = 16.sp
+                        )
+                    }
                 }
             }
+
         }
     }
 }
+
 
